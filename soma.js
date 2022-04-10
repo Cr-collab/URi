@@ -1,5 +1,7 @@
 const LeitorDeTexto = require('./Leitor')
 
-const [A, B] = LeitorDeTexto()
+const [A, B] = LeitorDeTexto().map(string => Number(string))
 
-console.log(`SOMA = ${A + B}`)
+const SOMA = A + B
+
+console.log(`SOMA = ${SOMA}`)
